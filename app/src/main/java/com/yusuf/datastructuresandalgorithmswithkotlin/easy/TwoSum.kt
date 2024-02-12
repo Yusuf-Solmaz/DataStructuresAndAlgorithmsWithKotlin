@@ -1,7 +1,9 @@
 package com.yusuf.datastructuresandalgorithmswithkotlin.easy
 
-class TwoSum {
-    // Description
+import java.util.Arrays
+
+
+// Description
 
     /*
     Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -19,12 +21,12 @@ class TwoSum {
     Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
     */
 
-}
+
 
 fun main(){
     val nums = intArrayOf(3,2,4)
 
-    println(twoSum(nums,6))
+    println(twoSum(nums, 6).contentToString())  // Result: [1, 2]
 }
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
